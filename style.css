@@ -1,0 +1,220 @@
+/* Reset */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html,
+body {
+  background-color: #151515;
+}
+
+hr {
+  border: 1.8px solid #271a45;
+}
+
+a {
+  text-decoration: none;
+  color: #e1e1e6;
+}
+
+/* Header */
+
+.navigation-bar {
+  background-color: #121214;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-items {
+  height: 100%;
+  color: #e1e1e6;
+  list-style-type: none;
+  display: flex;
+  gap: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.navigation-logo {
+  color: #e1e1e6;
+  font-size: 35px;
+  margin-left: 50px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.navigation-logo span {
+  color: #633bbc;
+}
+
+.navigation-item a {
+  position: relative;
+  text-decoration: none;
+  color: #e1e1e6;
+  font-size: 20px;
+  padding-bottom: 5px;
+  transition: color 0.3s;
+}
+
+.navigation-item a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #633bbc;
+  transition: width 0.3s ease;
+}
+
+.navigation-item a:hover::after,
+.navigation-item a.active::after {
+  width: 100%;
+}
+
+.navigation-item a:hover,
+.navigation-item a.active {
+  color: #633bbc;
+}
+
+/* Main */
+
+.container {
+  background-color: #151515;
+  width: 100%;
+  height: 100vh;
+}
+
+.main__title {
+  color: white;
+  padding: 100px;
+  margin-left: 10px;
+  margin-top: 60px;
+  font-weight: bolder;
+  font-size: 35px;
+}
+
+.main__title span {
+  color: #996dff;
+  text-transform: uppercase;
+}
+
+.main__subtitle {
+  color: white;
+  font-weight: normal;
+  margin-left: 110px;
+  margin-top: -60px;
+  margin-bottom: 30px;
+  margin-right: 580px;
+  font-size: 20px;
+}
+
+.main__subtitle span {
+  color: #8257e5;
+  font-weight: bolder;
+}
+
+.main__desc {
+  color: white;
+  padding: 100px;
+  margin-left: 10px;
+  margin-right: 580px;
+  margin-top: -90px;
+  font-size: 20px;
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 110px; /* Mantém o primeiro botão na mesma posição */
+  margin-top: -50px;
+  gap: 63px; /* Espaço entre os botões */
+}
+
+.hire__button {
+  background-color: #633bbc;
+  color: white;
+  border: none;
+  padding: 12px 60px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hire__button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 0.4s ease;
+  z-index: 1;
+}
+
+.hire__button:hover::after {
+  width: 100%;
+}
+
+.hire__button:hover {
+  background-color: #8257E5;
+}
+
+.hire__button span {
+  position: relative;
+  z-index: 2;
+}
+
+.contact__button {
+  background-color: #633bbc;
+  color: white;
+  border: none;
+  padding: 12px 50px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: width 0.4s ease;
+  z-index: 1;
+}
+
+.contact__button:hover::after {
+  width: 100%;
+}
+
+.contact__button:hover {
+  background-color: #8257E5;
+}
+
+.contact__button span {
+  position: relative;
+  z-index: 2;
+}
